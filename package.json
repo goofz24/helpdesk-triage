@@ -1,0 +1,31 @@
+{
+  "name": "helpdesk-triage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bilingual (English/Spanish) AI ticket triage for ServiceNow: sorts IT tickets, suggests a KB article, drafts a reply and flags what a human must handle. A technician approves every change.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "review": "tsx scripts/review.ts",
+    "eval": "tsx scripts/run-eval.ts",
+    "eval:fake": "tsx scripts/run-eval.ts --fake",
+    "estimate": "tsx scripts/run-eval.ts --estimate-only",
+    "sn:check": "tsx scripts/servicenow-check.ts",
+    "sn:seed": "tsx scripts/servicenow-seed.ts",
+    "sn:kb": "tsx scripts/servicenow-kb.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

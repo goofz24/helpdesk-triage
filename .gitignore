@@ -1,0 +1,4 @@
+node_modules/
+.env
+.triage-state.json
+evals/results/

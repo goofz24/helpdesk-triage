@@ -1,0 +1,122 @@
+[
+  {
+    "id": "KB-001",
+    "category": "password_mfa",
+    "title_en": "Reset your password with self-service",
+    "title_es": "Restablecer tu contraseña por autoservicio",
+    "body_en": "1. Go to the password reset page from any browser (the link is on the sign-in screen: \"Forgot password?\").\n2. Enter your work email and complete the verification with your Authenticator app or text message.\n3. Choose a new password: at least 14 characters, not used before.\n4. Sign out and back in on your laptop and phone so they pick up the new password.\nIT will never ask you for your password. If self-service does not work, reply to your ticket and a technician will verify your identity by phone.",
+    "body_es": "1. Ve a la página de restablecimiento desde cualquier navegador (el enlace está en la pantalla de inicio de sesión: \"¿Olvidaste tu contraseña?\").\n2. Escribe tu correo de trabajo y completa la verificación con la app Authenticator o un mensaje de texto.\n3. Elige una contraseña nueva: mínimo 14 caracteres, que no hayas usado antes.\n4. Cierra sesión y vuelve a entrar en tu laptop y teléfono para que tomen la contraseña nueva.\nIT nunca te pedirá tu contraseña. Si el autoservicio no funciona, responde a tu ticket y un técnico verificará tu identidad por teléfono."
+  },
+  {
+    "id": "KB-002",
+    "category": "password_mfa",
+    "title_en": "Set up or move multi-factor authentication (MFA) to a new phone",
+    "title_es": "Configurar o mover la autenticación multifactor (MFA) a un teléfono nuevo",
+    "body_en": "1. If you still have the old phone: open the security info page, choose \"Add sign-in method\", and scan the QR code with the Authenticator app on the new phone.\n2. Test the new method, then remove the old phone from the list.\n3. If the old phone is lost or wiped: reply to your ticket. A technician must verify your identity by phone before resetting MFA. Never share a verification code with anyone, including IT.",
+    "body_es": "1. Si todavía tienes el teléfono viejo: abre la página de información de seguridad, elige \"Agregar método de inicio de sesión\" y escanea el código QR con la app Authenticator en el teléfono nuevo.\n2. Prueba el método nuevo y luego quita el teléfono viejo de la lista.\n3. Si perdiste o borraste el teléfono viejo: responde a tu ticket. Un técnico tiene que verificar tu identidad por teléfono antes de restablecer el MFA. Nunca compartas un código de verificación con nadie, ni siquiera con IT."
+  },
+  {
+    "id": "KB-003",
+    "category": "account_access",
+    "title_en": "Account locked out or can't sign in",
+    "title_es": "Cuenta bloqueada o no puedes iniciar sesión",
+    "body_en": "1. Wait 15 minutes: accounts unlock automatically after too many wrong passwords.\n2. Check Caps Lock and the keyboard language (EN/ES) in the corner of the sign-in screen.\n3. If your password expired, use self-service reset (KB-001).\n4. Still locked after 15 minutes, or locked again right away? A phone or old laptop may be retrying an old password. Reply to your ticket with which devices you use and a technician will check the lockout source.",
+    "body_es": "1. Espera 15 minutos: la cuenta se desbloquea sola después de muchos intentos fallidos.\n2. Revisa Bloq Mayús y el idioma del teclado (EN/ES) en la esquina de la pantalla de inicio.\n3. Si tu contraseña expiró, usa el restablecimiento por autoservicio (KB-001).\n4. ¿Sigues bloqueado después de 15 minutos, o se bloquea otra vez enseguida? Puede que un teléfono o una laptop vieja esté usando la contraseña anterior. Responde a tu ticket indicando qué equipos usas y un técnico revisará el origen del bloqueo."
+  },
+  {
+    "id": "KB-004",
+    "category": "network_vpn",
+    "title_en": "Connect to the VPN from home",
+    "title_es": "Conectarte a la VPN desde casa",
+    "body_en": "1. Make sure your home internet works (open any website).\n2. Open the VPN app from the system tray and choose \"Connect\". Sign in with your work account and approve the MFA prompt.\n3. If it fails: restart the laptop, then try again on a different network (phone hotspot) to rule out your home router.\n4. Hotel and airport Wi-Fi often block VPN until you accept their web page first.\nIf it still fails, reply with the exact error message or a screenshot.",
+    "body_es": "1. Confirma que el internet de tu casa funciona (abre cualquier página).\n2. Abre la app de VPN desde la bandeja del sistema y elige \"Conectar\". Entra con tu cuenta de trabajo y aprueba el aviso de MFA.\n3. Si falla: reinicia la laptop y prueba en otra red (punto de acceso del teléfono) para descartar tu router.\n4. El Wi-Fi de hoteles y aeropuertos a veces bloquea la VPN hasta que aceptes su página web primero.\nSi sigue fallando, responde con el mensaje de error exacto o una captura de pantalla."
+  },
+  {
+    "id": "KB-005",
+    "category": "network_vpn",
+    "title_en": "Fix Wi-Fi connection problems in the office",
+    "title_es": "Resolver problemas de Wi-Fi en la oficina",
+    "body_en": "1. Turn Wi-Fi off and on, or put the laptop in airplane mode for 10 seconds.\n2. Choose \"Forget\" on the office network and connect again with your work account.\n3. Restart the laptop.\n4. If coworkers near you also have no Wi-Fi, it may be an access point problem: say so in your ticket so it is handled as an outage.",
+    "body_es": "1. Apaga y enciende el Wi-Fi, o pon la laptop en modo avión por 10 segundos.\n2. Elige \"Olvidar\" en la red de la oficina y vuelve a conectarte con tu cuenta de trabajo.\n3. Reinicia la laptop.\n4. Si tus compañeros cerca tampoco tienen Wi-Fi, puede ser un problema del punto de acceso: dilo en tu ticket para tratarlo como una interrupción."
+  },
+  {
+    "id": "KB-006",
+    "category": "email_outlook",
+    "title_en": "Outlook won't open or email isn't syncing",
+    "title_es": "Outlook no abre o el correo no se sincroniza",
+    "body_en": "1. Check the bottom bar of Outlook: if it says \"Working offline\", go to Send/Receive and turn off Work Offline.\n2. Close Outlook fully and open it again. If it hangs, restart the laptop.\n3. Check webmail in a browser. If email works there, the problem is the Outlook app on your laptop.\n4. If your mailbox is full, delete large old emails or empty Deleted Items.\nIf webmail also fails, reply to your ticket: it may be a wider email problem.",
+    "body_es": "1. Mira la barra inferior de Outlook: si dice \"Trabajar sin conexión\", ve a Enviar y recibir y desactiva Trabajar sin conexión.\n2. Cierra Outlook por completo y ábrelo otra vez. Si se queda trabado, reinicia la laptop.\n3. Revisa el correo web en un navegador. Si ahí funciona, el problema es la app de Outlook en tu laptop.\n4. Si tu buzón está lleno, borra correos grandes viejos o vacía Elementos eliminados.\nSi el correo web también falla, responde a tu ticket: puede ser un problema más amplio."
+  },
+  {
+    "id": "KB-007",
+    "category": "access_request",
+    "title_en": "Request access to a shared mailbox, folder or application",
+    "title_es": "Solicitar acceso a un buzón compartido, carpeta o aplicación",
+    "body_en": "Access changes need your manager's approval before IT can make them.\n1. Reply to your ticket with: the exact mailbox, folder or app name, the access you need (read or edit), and your manager's name.\n2. IT sends the request to your manager (or the data owner) for approval.\n3. After approval, access usually appears within one business day. Sign out and back in to see it.\nIT can't grant admin rights or access to other people's data based on a ticket alone.",
+    "body_es": "Los cambios de acceso necesitan la aprobación de tu supervisor antes de que IT los haga.\n1. Responde a tu ticket con: el nombre exacto del buzón, carpeta o aplicación, el acceso que necesitas (lectura o edición) y el nombre de tu supervisor.\n2. IT envía la solicitud a tu supervisor (o al dueño de los datos) para aprobación.\n3. Después de aprobada, el acceso suele aparecer en un día laborable. Cierra sesión y vuelve a entrar para verlo.\nIT no puede dar derechos de administrador ni acceso a datos de otras personas solo con un ticket."
+  },
+  {
+    "id": "KB-008",
+    "category": "printer",
+    "title_en": "Add a printer or clear stuck print jobs",
+    "title_es": "Agregar una impresora o borrar trabajos de impresión trabados",
+    "body_en": "1. Add a printer: Settings > Bluetooth & devices > Printers & scanners > Add device, then choose the printer name shown on its label.\n2. Stuck jobs: open the printer's queue, choose \"Cancel all documents\", then turn the printer off and on.\n3. Check paper, toner and any error on the printer's own screen.\n4. If nobody can print to that printer, say so in your ticket so a technician can visit.",
+    "body_es": "1. Agregar impresora: Configuración > Bluetooth y dispositivos > Impresoras y escáneres > Agregar dispositivo, y elige el nombre que aparece en la etiqueta de la impresora.\n2. Trabajos trabados: abre la cola de la impresora, elige \"Cancelar todos los documentos\" y luego apaga y enciende la impresora.\n3. Revisa papel, tóner y cualquier error en la pantalla de la impresora.\n4. Si nadie puede imprimir en esa impresora, dilo en tu ticket para que un técnico la visite."
+  },
+  {
+    "id": "KB-009",
+    "category": "security",
+    "title_en": "Report a suspicious or phishing email",
+    "title_es": "Reportar un correo sospechoso o de phishing",
+    "body_en": "1. Don't click links, open attachments or reply.\n2. Use the \"Report phishing\" button in Outlook, or forward the email as an attachment to the security team.\n3. If you already clicked a link or typed your password: change your password right away (KB-001) and tell IT in your ticket. This is handled as urgent.\n4. Delete the email after reporting it.",
+    "body_es": "1. No hagas clic en enlaces, no abras adjuntos y no respondas.\n2. Usa el botón \"Reportar phishing\" en Outlook, o reenvía el correo como adjunto al equipo de seguridad.\n3. Si ya hiciste clic en un enlace o escribiste tu contraseña: cámbiala de inmediato (KB-001) y avísale a IT en tu ticket. Esto se trata como urgente.\n4. Borra el correo después de reportarlo."
+  },
+  {
+    "id": "KB-010",
+    "category": "security",
+    "title_en": "Lost or stolen laptop or phone",
+    "title_es": "Laptop o teléfono perdido o robado",
+    "body_en": "1. Tell IT right away, even outside business hours: IT will lock and, if needed, wipe the device remotely.\n2. Change your password from another device (KB-001).\n3. If it was stolen, file a police report and share the report number in your ticket.\n4. IT will arrange a replacement device after the old one is locked.",
+    "body_es": "1. Avísale a IT de inmediato, aunque sea fuera de horario: IT bloqueará y, si hace falta, borrará el equipo a distancia.\n2. Cambia tu contraseña desde otro equipo (KB-001).\n3. Si fue robado, haz una querella en la policía y comparte el número en tu ticket.\n4. IT coordinará un equipo de reemplazo después de bloquear el anterior."
+  },
+  {
+    "id": "KB-011",
+    "category": "software",
+    "title_en": "Install approved software or request a new license",
+    "title_es": "Instalar programas aprobados o solicitar una licencia nueva",
+    "body_en": "1. Open the Company Portal app and search for the program. Approved software installs from there without admin rights.\n2. If it isn't in Company Portal, reply to your ticket with the program name, why you need it, and your manager's name. Paid licenses need manager approval.\n3. Don't download installers from the internet: they are blocked and may be unsafe.",
+    "body_es": "1. Abre la app Portal de empresa y busca el programa. El software aprobado se instala desde ahí sin derechos de administrador.\n2. Si no está en el Portal de empresa, responde a tu ticket con el nombre del programa, para qué lo necesitas y el nombre de tu supervisor. Las licencias pagadas necesitan aprobación del supervisor.\n3. No descargues instaladores de internet: están bloqueados y pueden ser inseguros."
+  },
+  {
+    "id": "KB-012",
+    "category": "hardware",
+    "title_en": "Laptop is slow, freezing or out of disk space",
+    "title_es": "La laptop está lenta, se congela o no tiene espacio",
+    "body_en": "1. Restart the laptop (a real restart, not just closing the lid). Many slow laptops haven't restarted in weeks.\n2. Install pending updates: Settings > Windows Update.\n3. Free disk space: empty the Recycle Bin and Downloads, and set OneDrive files to \"online-only\" (KB-015).\n4. Close browser tabs and apps you aren't using.\nIf it is still slow, or you hear clicking or see the battery swelling, reply to your ticket: the hardware may need repair.",
+    "body_es": "1. Reinicia la laptop (un reinicio de verdad, no solo cerrar la tapa). Muchas laptops lentas llevan semanas sin reiniciar.\n2. Instala las actualizaciones pendientes: Configuración > Windows Update.\n3. Libera espacio: vacía la Papelera y Descargas, y pon los archivos de OneDrive como \"solo en línea\" (KB-015).\n4. Cierra pestañas y programas que no estés usando.\nSi sigue lenta, o escuchas clics o ves la batería hinchada, responde a tu ticket: el equipo puede necesitar reparación."
+  },
+  {
+    "id": "KB-013",
+    "category": "software",
+    "title_en": "Teams audio, camera or screen sharing problems",
+    "title_es": "Problemas de audio, cámara o compartir pantalla en Teams",
+    "body_en": "1. In the meeting, open More > Settings > Device settings and pick the right microphone, speaker and camera.\n2. Check the physical mute switch or camera shutter on the laptop or headset.\n3. Allow Teams to use the camera and microphone: Settings > Privacy & security > Camera / Microphone.\n4. Quit Teams fully (right-click the tray icon > Quit) and open it again.",
+    "body_es": "1. En la reunión, abre Más > Configuración > Configuración de dispositivos y elige el micrófono, bocina y cámara correctos.\n2. Revisa el botón físico de silencio o la tapa de la cámara en la laptop o los audífonos.\n3. Permite que Teams use la cámara y el micrófono: Configuración > Privacidad y seguridad > Cámara / Micrófono.\n4. Cierra Teams por completo (clic derecho en el ícono de la bandeja > Salir) y ábrelo otra vez."
+  },
+  {
+    "id": "KB-014",
+    "category": "hardware",
+    "title_en": "New employee laptop setup and first sign-in",
+    "title_es": "Preparar la laptop de un empleado nuevo y primer inicio de sesión",
+    "body_en": "1. Managers request new-hire equipment at least 5 business days before the start date, with the employee's name, role and start date.\n2. On day one, turn on the laptop, connect to Wi-Fi and sign in with the work email and temporary password from your manager.\n3. Set your own password and MFA when asked (KB-002). Setup installs apps automatically; leave the laptop on and plugged in for about 30 minutes.\n4. If an app is missing after setup, check Company Portal (KB-011).",
+    "body_es": "1. Los supervisores solicitan el equipo del empleado nuevo al menos 5 días laborables antes de su fecha de inicio, con su nombre, puesto y fecha de inicio.\n2. El primer día, enciende la laptop, conéctate al Wi-Fi y entra con el correo de trabajo y la contraseña temporal que te dio tu supervisor.\n3. Crea tu propia contraseña y el MFA cuando te lo pida (KB-002). La configuración instala las apps sola; deja la laptop encendida y conectada unos 30 minutos.\n4. Si falta una app después, búscala en el Portal de empresa (KB-011)."
+  },
+  {
+    "id": "KB-015",
+    "category": "software",
+    "title_en": "OneDrive or SharePoint files not syncing",
+    "title_es": "Los archivos de OneDrive o SharePoint no se sincronizan",
+    "body_en": "1. Click the OneDrive cloud icon in the system tray and read the status message.\n2. If it says paused, choose Resume syncing. If you are signed out, sign in again.\n3. File names with characters like # % : or very long paths can block sync: rename the file.\n4. To save disk space, right-click a folder and choose \"Free up space\" (files stay online).",
+    "body_es": "1. Haz clic en el ícono de nube de OneDrive en la bandeja del sistema y lee el mensaje de estado.\n2. Si dice en pausa, elige Reanudar sincronización. Si cerraste sesión, vuelve a entrar.\n3. Nombres de archivo con caracteres como # % : o rutas muy largas pueden bloquear la sincronización: cambia el nombre.\n4. Para ahorrar espacio, haz clic derecho en una carpeta y elige \"Liberar espacio\" (los archivos se quedan en línea)."
+  }
+]
