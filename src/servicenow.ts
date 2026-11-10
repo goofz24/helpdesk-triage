@@ -42,7 +42,7 @@ export const SN_CATEGORY: Record<Category, { category: string; subcategory?: str
 export function configFromEnv(env: NodeJS.ProcessEnv = process.env): ServiceNowConfig | null {
   const instanceUrl = env.SN_INSTANCE?.trim().replace(/\/+$/, "");
   const user = env.SN_USER?.trim();
-  const password = env.SN_PASSWORD;
+  const password = env.SN_PASSWORD?.trim();
   if (!instanceUrl || !user || !password) return null;
   if (!/^https:\/\/[a-z0-9-]+\.service-now\.com$/i.test(instanceUrl)) {
     throw new ServiceNowError(`SN_INSTANCE should look like https://dev12345.service-now.com (got "${instanceUrl}")`);
