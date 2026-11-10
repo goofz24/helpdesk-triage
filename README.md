@@ -23,19 +23,23 @@ More detail: [docs/GUARDRAILS.md](docs/GUARDRAILS.md).
 
 ## Results
 
+First real run, Nov 9 2026: all 60 tickets on Claude Haiku 5.5, **total cost $0.025**.
+
 | Test split (40 tickets the prompt was never tuned on) | Keyword rules (baseline) | Claude Haiku 5.5 |
 |---|---|---|
-| Needs-a-person recall | 73.9% | _pending first real run_ |
-| Needs-a-person precision | 100% | _pending_ |
-| Category accuracy | 80% | _pending_ |
-| Priority exact (within one level) | 45% (92.5%) | _pending_ |
-| KB article accuracy | 50% | _pending_ |
-| Language accuracy | 92.5% | _pending_ |
-| Secrets sent to the AI | 0 | _pending_ |
+| **Needs-a-person recall** | 73.9% | **100%** |
+| Needs-a-person precision | 100% | 85.2% |
+| Category accuracy | 80% | 90% |
+| Priority exact (within one level) | 45% (92.5%) | 80% (95%) |
+| KB article accuracy | 50% | 90% |
+| Language accuracy | 92.5% | 97.5% |
+| Secrets sent to the AI | 0 | 0 |
 
-The baseline is a set of English/Spanish keyword rules ([src/fake-triage.ts](src/fake-triage.ts)). It was written while looking at the same tickets, so it is an optimistic baseline. It still misses 10 of the 33 tickets that need a person (for example a lost MFA phone, repeat lockouts, a swollen battery), which is the gap the AI has to close.
+Across all 60 tickets: 100% recall, 89.2% precision, 93.3% category, 73.3% priority exact (96.7% within one level), 90% KB.
 
-A full run of all 60 tickets on Claude Haiku 5.5 costs about $0.03.
+**What the numbers mean.** Every ticket that needed a technician was sent to one: the AI plus the code rules missed none, while the keyword baseline missed 10 of 33. All 12 mistakes lean the safe way: a few simple tickets went to a person when the help article would have done (an urgent Outlook problem, an expired password), a few were sent without a KB link, and one answer (T006) didn't fit the schema, so that ticket was triaged by hand instead of guessed.
+
+The keyword baseline ([src/fake-triage.ts](src/fake-triage.ts)) was written while looking at the same tickets, so it is an optimistic baseline.
 
 ## How it works
 
@@ -104,6 +108,8 @@ npm run review           # triage new incidents; approve to write back
 
 ## What I'd do next
 
+- T006 failed because the model gave a technician reason that isn't on the allowed list. Map unknown reasons to "technician work needed" instead of failing the whole answer, then re-measure.
+- Add a KB article for mailbox quota cleanup: the model correctly saw that KB-006 doesn't really cover it (T014).
 - Read the full KB article text into the prompt (with prompt caching) if article choice is the weak spot.
 - Let ServiceNow call the assistant when an incident is created (Business Rule or Flow Designer + REST), instead of the technician starting the review.
 - Track how often technicians change the AI's suggestion, and add those tickets to the test set.
